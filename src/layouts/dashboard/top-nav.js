@@ -7,7 +7,7 @@ import Brightness7Icon from '@mui/icons-material/Brightness7';
 
 const TOP_NAV_HEIGHT = 64;
 
-export const TopNav = () => {
+export const TopNav = ( { onLogoClick } ) => {
   const { mode, toggleTheme } = useThemeContext();
 
   return (
@@ -42,6 +42,7 @@ export const TopNav = () => {
               height: 24,
               width: 24,
             }}
+            onClick={onLogoClick}
           >
             <Logo />
           </Box>
